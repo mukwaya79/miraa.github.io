@@ -1,0 +1,45 @@
+
+
+@media (max-width: 576px) {
+    .navbar {
+      position: static !important; /* Makes the navbar revert to normal (non-fixed) */
+    }
+  }
+
+  #anim{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.9s ease-in-out forwards;
+  }
+
+  @keyframes moveup{
+    100%{
+        opacity: 1;
+        transform: translateY(10px);
+    }
+  }
+
+  .anime{
+    animation-delay: 1.8s;
+  }
+   
+
+.media{
+    font-size: 29px;
+    font-weight: bold;
+}
+.contact{
+    font-size: 28px;
+    border-radius: 2px;
+    
+}
+#hero{
+    height: 100vh; /* Full viewport height */
+    background-color: #f8f9fa;    
+}
+.media{
+  background-color:#f8f9fa;
+}
+#contact{
+  background-color:#f8f9fa;
+}
