@@ -1,12 +1,27 @@
 
 
-@media (max-width: 576px) {
-    .navbar {
-      position: static !important; /* Makes the navbar revert to normal (non-fixed) */
+@media (max-width: 768px) {
+    #anim{
+      display: none;
+    }
+    #anim1{
+      padding-bottom: -40px;
+      margin-bottom: -30px;
+      align-items: center;
+      justify-content: center;
+      margin-top: 40px;
+    }
+    #anim1 a{
+      margin-left: 30px;
     }
   }
 
   #anim{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.9s ease-in-out forwards;
+  }
+  #anim1{
     opacity: 0;
     transform: translateY(30px);
     animation: moveup 0.9s ease-in-out forwards;
